@@ -41,12 +41,12 @@ console.log(daysofThreeWeeks);
 
 //  While Loops
 
- /*
- const firstElement = "Hydrogen";
+ 
+ /*const firstElement = "hydrogen";
 
  let guess = prompt("Enter The First Element In The Periodic Table: ")
 
-     while (guess !== firstElement){
+     while (guess.toLowerCase() !== firstElement){
 
            guess = prompt("Try Again. Enter The First Element In The Periodic Table: ")
 
@@ -58,16 +58,99 @@ console.log(daysofThreeWeeks);
 
      // The Break Keyword: This is a way to escape a loop.
 
-     /*
-     let input = prompt("I am going to repeat after you. Please say stop if you want me to stop. ");
+     // let input = prompt("I am going to repeat after you. Please say stop if you want me to stop. ");
 
-     while (true){
+     // while (true){
 
-          input = prompt(input);
+     //      input = prompt(input);
 
-           if (input.toLowerCase() === "stop") break;
+     //       if (input.toLowerCase() === "stop") break;
+     // }
+
+     // document.write("Thanks for your time");
+
+
+// Writing A Guessing Game
+
+/*let maximum = parseInt(prompt("Enter the maximum number: "));
+
+     while (!maximum){
+          maximum = parseInt(prompt("Please enter a valid number: "));
      }
 
-     document.write("Thanks for your time"); */
+
+     const targetNum = Math.floor(Math.random() * maximum +1);
+
+     let guess = parseInt(prompt("Enter your first guesss: "));
+     let attemps = 1;
+
+     while(parseInt(guess) !== targetNum){
+
+          if (guess === 'q') break;
+          attemps++;
+
+          if (guess > targetNum) {
+               guess = prompt("Too High! Enter a new guess: ");
+
+          } else {
+               guess = prompt("Too Low! Enter a new guess: ");
+          }
+     }
+
+     if (guess === 'q') {
+
+          document.write("Ok You Quit, I Won!!!");
+
+     } else{
+           document.write(`Congratulations you won. You guesssed ${attemps} times.`);
+     }
+*/ 
+// Pitfall of code. If a user inputs a character instead of a number their is no regular expression to check for it. 
+
+// For...of Loops
+
+/*const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+*/
+// Using a normal loop for iteration:
+     /*for(i=0; i < weekDays.length; i++){
+           console.log(`Today is ${weekDays[i]}`);
+         }*/
+
+// Using a For...of Loop for iteration:
+         /*for(let days of weekDays){
+          console.log(`Today is ${days}`);
+         }*/
+
+//  More Iteration with For...of Loops
+
+// Using For Loops
+/*
+const daysMonth = [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                   ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                   ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                   ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]];*/
+
+    /* for (a=0; a < daysMonth.length; a++){
+
+          console.log(`Week ${a + 1}`);
+
+          const b = daysMonth[a];
+
+          for ( c=0; c < b.length; c++) {
+
+               console.log(`  Today is ${b[c]}`);
+          
+          }
+     }*/
+
+//  Using For...of Loops
 
      
+    /* for(let a of daysMonth){
+          for(let b of a){
+
+          console.log(`  Today is ${b}`);
+
+          }
+     }*/
+
