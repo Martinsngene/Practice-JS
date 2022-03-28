@@ -154,3 +154,7 @@ const daysMonth = [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
           }
      }*/
 
+     // ASYNCHRONOUS JAVASCRIPT
+
+     
+
