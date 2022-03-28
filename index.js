@@ -1,4 +1,3 @@
-
 // Do While Loops
 
 /*
@@ -9,17 +8,15 @@ do{
 }while (!yourName);
 console.log(yourName);Martins */
 
-
 //  Nested Loops
 
-    /*
+/*
     for (i=1; i<=10; i++){
           console.log(`When you count ${i} you are consecutively incrementing the numbers.`)
           for (j=1; j<=5; j++){
                console.log(`            When you count ${j} you are doing so in base ten.`)
           }
      } */
-
 
 // Iterating Through arrays with Nested Loops
 
@@ -38,11 +35,9 @@ console.log(daysofThreeWeeks);
                }
      } */
 
-
 //  While Loops
 
- 
- /*const firstElement = "hydrogen";
+/*const firstElement = "hydrogen";
 
  let guess = prompt("Enter The First Element In The Periodic Table: ")
 
@@ -54,21 +49,18 @@ console.log(daysofThreeWeeks);
 
      document.write("You're a Superb Thinker!"); */
 
+// The Break Keyword: This is a way to escape a loop.
 
+// let input = prompt("I am going to repeat after you. Please say stop if you want me to stop. ");
 
-     // The Break Keyword: This is a way to escape a loop.
+// while (true){
 
-     // let input = prompt("I am going to repeat after you. Please say stop if you want me to stop. ");
+//      input = prompt(input);
 
-     // while (true){
+//       if (input.toLowerCase() === "stop") break;
+// }
 
-     //      input = prompt(input);
-
-     //       if (input.toLowerCase() === "stop") break;
-     // }
-
-     // document.write("Thanks for your time");
-
+// document.write("Thanks for your time");
 
 // Writing A Guessing Game
 
@@ -104,20 +96,20 @@ console.log(daysofThreeWeeks);
      } else{
            document.write(`Congratulations you won. You guesssed ${attemps} times.`);
      }
-*/ 
-// Pitfall of code. If a user inputs a character instead of a number their is no regular expression to check for it. 
+*/
+// Pitfall of code. If a user inputs a character instead of a number their is no regular expression to check for it.
 
 // For...of Loops
 
 /*const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-*/
+ */
 // Using a normal loop for iteration:
-     /*for(i=0; i < weekDays.length; i++){
+/*for(i=0; i < weekDays.length; i++){
            console.log(`Today is ${weekDays[i]}`);
          }*/
 
 // Using a For...of Loop for iteration:
-         /*for(let days of weekDays){
+/*for(let days of weekDays){
           console.log(`Today is ${days}`);
          }*/
 
@@ -130,7 +122,7 @@ const daysMonth = [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
                    ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
                    ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]];*/
 
-    /* for (a=0; a < daysMonth.length; a++){
+/* for (a=0; a < daysMonth.length; a++){
 
           console.log(`Week ${a + 1}`);
 
@@ -145,8 +137,7 @@ const daysMonth = [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
 
 //  Using For...of Loops
 
-     
-    /* for(let a of daysMonth){
+/* for(let a of daysMonth){
           for(let b of a){
 
           console.log(`  Today is ${b}`);
@@ -154,7 +145,14 @@ const daysMonth = [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
           }
      }*/
 
-     // ASYNCHRONOUS JAVASCRIPT
+// ASYNCHRONOUS JAVASCRIPT
 
-     
+const seePrime = (num) => {
+  if (num % num === 0 && num % 1 === num) {
+    return "isPrime";
+  } else {
+    return "is not prime";
+  }
+};
 
+console.log(seePrime(3));
